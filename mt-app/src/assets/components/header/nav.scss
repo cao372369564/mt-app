@@ -1,0 +1,110 @@
+.my-nav{
+    height: 40px;
+    ul{
+        height: 40px;
+        line-height: 40px;
+        width: 306px;
+        margin: 0 auto;
+        li{
+            float: left;
+            position: relative;
+            padding: 0px 14px;
+            border: 1px solid #F8F8F8;
+            border-bottom: none;
+            .right-nav{
+                color: #999;
+            }
+            .right-nav:hover{
+                color: #31bbac;
+            }
+            &:nth-of-type(1):hover,
+            &:nth-of-type(3):hover,
+            &:nth-of-type(4):hover{
+                background-color: #fff;
+                border-left: 1px solid #e5e5e5;
+                border-right: 1px solid #e5e5e5;
+            }
+            &:nth-of-type(3):hover .right-nav,
+            &:nth-of-type(4):hover .right-nav{
+                color: #31bbac;
+            }
+            &:hover .sub-container{
+                display: block;
+            }
+            .sub-container{
+                position: absolute;
+                top: 95%;
+                z-index: 1000;
+                box-shadow: 0 3px 5px 0 rgba(0,0,0,.1);
+                right: -1px;
+                padding: 0 14px;
+                display: none;
+                dd{
+                    a:hover{
+                        color: #31bbac;
+                    }
+                }
+            }
+        }
+        li:nth-of-type(3){
+            .sub-container{
+                width: 140%;
+            }
+        }
+        li:nth-of-type(4){
+            .web-nav{
+                display: none;
+                .sub-container{
+                    z-index: 999;
+                    background-color: #fff;
+                    min-width: 960px;
+                    box-sizing: content-box;
+                    padding: 30px 36px 36px 47px;
+                    display: flex;
+                    justify-content: space-around;
+                    line-height: 25px;
+                    dl{
+                        display: flex;
+                        flex-direction: column;
+                        dt{
+                            color: #31bbac;
+                            font-size: 13.5px;
+                            padding: 10px 0 20px;
+                        }
+                        div{
+                            display: flex;
+                            justify-content: space-around;
+                            dd{
+                                display: flex;
+                                flex-direction: column;
+                                padding: 0px 10px;
+                                a:hover{
+                                    color: #31bbac;
+                                }
+                            }
+                        }
+                        .app{
+                            .appicon{
+                                width: 60px;
+                                height: 60px;
+                                img{
+                                    width: 60px;
+                                    height: 60px;
+                                    padding: 0 5px;
+                                }
+                            }
+                        }
+                    }
+                    
+                }
+            }
+            &:hover .web-nav{
+                display: block;
+            }
+        }
+    }
+}
+
+
+
+
