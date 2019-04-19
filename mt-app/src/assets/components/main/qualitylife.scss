@@ -1,0 +1,166 @@
+.quality-life{
+    width: 1130px;
+    margin: 35px auto 0;
+    box-sizing: border-box;
+    
+    dl{
+        background-color: rgb(190, 164, 116);
+        background-image: linear-gradient(to right, rgb(194, 176, 142) 3%, rgb(190, 164, 116) 100%);
+        color: #fff;
+        height: 44px;
+        line-height: 44px;
+        box-sizing: border-box;
+
+        &.maoyan-movie{
+            background: linear-gradient(to right, rgb(250, 60, 104) 2%, rgb(254, 70, 77) 97%) rgb(250, 60, 104);
+        }
+
+        &.zhenguo-hotel{
+            background: linear-gradient(to right, rgb(243, 182, 74) 2%, rgb(242, 197, 69) 97%) rgb(243, 182, 74);
+        }
+
+        dt{
+            font-size: 18px;
+            font-weight: 700;
+            float: left;
+            margin-left: 13px;
+            margin-right: 10px;
+            padding: 0 5px;
+            cursor: pointer;
+        }
+
+        dd{
+            float: left;
+            font-size: 14px;
+            padding: 0 5px;
+            cursor: pointer;
+            font-weight: 700;
+            position: relative;
+            
+        }
+
+        .active:after{
+            display: block;
+            content: '';
+            border-left: 5px solid transparent;
+            border-right: 5px solid transparent;
+            border-bottom: 7px solid #fff;
+            position: absolute;
+            width: 2px;
+            bottom: 0px;
+            left: 0;
+            right: 0;
+            margin: auto;
+        }
+
+        &:after{
+            display: block;
+            content: '';
+            clear: both;
+        }
+        
+    }
+
+    .life-area{
+        height: 270px;
+        width: 100%;
+        box-sizing: border-box;
+        background-color: #fff;
+
+        a{
+            width: 33.3%;
+            float: left;
+            box-sizing: border-box;
+            background: #fff;
+            transition: background-color 0.5s;
+
+            .el-card{
+                width: 100%;
+
+                .el-card__body{
+                    padding: 10px;
+                }
+                
+                img{
+                    height: 162px;
+                    width: 100%;
+                    margin-bottom: 11px;
+                }
+
+                .img_info{
+                    position: relative;
+
+                    .title{
+                        display: inline-block;
+                        font-size: 16px;
+                        color: #222;
+                        height: 22px;
+                        line-height: 22px;
+                        margin-bottom: 8px;
+                    }
+
+                    .tag-info{
+                        overflow: hidden;
+                        height: 20px;
+                        margin-bottom: 5px;
+
+                        li{
+                            height: 18px;
+                            line-height: 18px;
+                            font-size: 12px;
+                            color: #999;
+                            float: left;
+                            border: 1px solid #999;
+                            margin-right: 10px;
+                            margin-bottom: 5px;
+                            padding: 0 3px;
+                        }
+
+                        &:after{
+                            display: block;
+                            clear: both;
+                            content: '';
+                        }
+                        
+                    }
+                    
+                    .price-info{
+                        color: #BE9E4D;
+                        font-size: 14px;
+                        letter-spacing: -1px;
+
+                        .price{
+                            font-size: 22px;
+                            font-style: normal;
+                            font-weight: 700;
+                        }
+                        
+                    }
+                    
+                    .position{
+                        position: absolute;
+                        right: 5px;
+                        bottom: 5px;
+                        color: #999;
+                        font-size: 12px;
+                    }
+
+                }
+
+            }
+
+            .el-card:hover{
+                background-color: #e5e5e5;
+            }
+            
+            &:after{
+                display: block;
+                content: '';
+                clear: both;
+            }
+            
+        }
+        
+    }
+
+}

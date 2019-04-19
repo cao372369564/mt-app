@@ -1,0 +1,88 @@
+.mt-footer{
+    background-color: #F8F8f8;
+    width: 100%;
+    .container{
+        width: 1190px;
+        margin: 0 auto;
+        padding: 40px 45px;
+        border-top: 1px solid #aaa;
+        border-bottom: 1px solid #aaa;
+        box-sizing: border-box;
+        display: flex;
+        flex-direction: row;
+        .col{
+            width: 20%;
+            dl{
+                color: #666;
+                padding-bottom: 20px;
+                dt{
+                    font-size: 14px;
+                    font-weight: 500;
+                    padding-bottom: 6px;
+                    a{
+                        color: #666;
+                    }
+                    a:hover{
+                        color: #13d1be;
+                    }
+                }
+                dd{
+                    font-size: 12px;
+                    padding: 5px 0;
+
+                    a{
+                        color: #666;
+                    }
+                    a:hover{
+                        color: #13d1be;
+                    }
+                }
+                .intro{
+                    a{
+                        line-height: 30px;
+                    }
+                }
+            }
+        }
+    }
+    .end{
+        width: 1190px;
+        margin: 0 auto;
+        padding-top: 15px;
+        padding-left: 20px;
+        padding-bottom: 30px;
+        color: #999;
+        display: flex;
+        justify-content: space-between;
+        .end-left{
+            font-size: 12px;
+            height: 76px;
+            .el-row{
+                padding: 2px;
+                span{
+                    margin-right: 18px;
+                }
+                a{
+                    color: #999;
+                    margin-right: 18px;
+                }
+                a:hover{
+                    color: #13d1be;
+                }
+            }
+        }
+        .end-right{
+            font-size: 12px;
+            position: relative;
+            .el-row{
+                a{
+                    color: #999;
+                    line-height: 20px;
+                }
+                a:hover{
+                    color: #13d1be;
+                }
+            }
+        }
+    }
+}

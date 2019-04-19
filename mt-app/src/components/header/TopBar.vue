@@ -14,7 +14,7 @@ import Geo from './Geo.vue'
 import MyNav from './Nav.vue'
 export default {
     components: {
-        Geo,    
+        Geo,
         MyNav,
     }
 }

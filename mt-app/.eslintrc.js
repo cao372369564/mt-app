@@ -1,6 +1,8 @@
 // https://eslint.org/docs/user-guide/configuring
 
 module.exports = {
+  //默认情况下，ESlint会在所有腹肌组件中寻找配置文件，一直找到根目录，ESlint一旦发现配置文件中有
+  //'root'：true,他就会停止在父级目录中寻找。
   root: true,
   parserOptions: {
     parser: 'babel-eslint'
@@ -17,7 +19,7 @@ module.exports = {
   ],
   // required to lint *.vue files
   plugins: [
-    'vue'
+    'vue',
   ],
   // add your custom rules here
   rules: {

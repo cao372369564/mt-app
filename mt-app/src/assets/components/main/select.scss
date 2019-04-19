@@ -1,0 +1,107 @@
+.select{
+    background-color: #fff;
+    // border: 1px solid #e5e5e5;
+    display: inline-block;
+    position: relative;
+    margin-right: 20px;
+
+    .province{
+        border: 1px solid #e5e5e5;
+        padding: 10px 8px;
+        font-size: 14px;
+        width: 120px;
+        position: relative;
+        background-color: #fff;
+        cursor: pointer;
+
+        &:after{
+            display: inline-block;
+            content: '';
+            border-top: 4px solid #333;
+            border-left: 4px solid transparent;
+            border-right: 4px solid transparent;
+            border-bottom: 4px solid transparent;
+            position: absolute;
+            top: 50%;
+            margin-top: -2px;
+            right: 8px;
+            
+        }
+
+        &.disabled{
+            cursor: not-allowed;
+        }
+
+    }
+
+    .province-list{
+        background-color: #fff;
+        border: 1px solid #e5e5e5;
+        border-radius: 4px;
+        padding: 10px 20px;
+        
+        position: absolute;
+        display: inline-block;
+        top: 43px;
+
+        &:before{
+            display: inline-block;
+            content: '';
+            border-top: 0;
+            border-left: 5px solid transparent;
+            border-right: 5px solid transparent;
+            border-bottom: 5px solid #e5e5e5;
+            position: absolute;
+            top: -5px;
+
+        }
+        
+        h2{
+            margin: 10px 0 20px;
+            font-size: 18px;
+            color: #e5e5e5;
+            background-color: #fff;
+        }
+
+        .list{
+            display: flex;
+            // flex-direction: row;
+
+            p{
+                background-color: #fff;
+                margin-right: 20px;
+                width: 50px;
+                display: flex;
+                flex-direction: column;
+
+                span{
+                    background-color: #fff;
+                    font-size: 10px;
+                    padding: 2px 0;
+                    margin: 5px 0;
+                    text-align: center;
+                    cursor: pointer;
+
+                    &:hover{
+                        color: #31d1ae;
+                    }
+
+                    &.active{
+                        background-color: #31d1ae;
+                        border-radius: 10px;
+                        color: #fff;
+                    }
+
+                }
+                
+            }
+
+        }
+        
+    }
+
+    &:hover{
+        color: 000;
+    }
+    
+}

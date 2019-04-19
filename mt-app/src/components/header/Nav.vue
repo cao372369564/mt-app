@@ -133,7 +133,7 @@
 
 <script>
 export default {
-    
+
 };
 </script>
 
