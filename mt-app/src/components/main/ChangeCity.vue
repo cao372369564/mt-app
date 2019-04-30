@@ -83,6 +83,7 @@
 
 <script>
 import Selection from '@/components/main/Select.vue'
+import api from '@/api/index.js'
 export default {
     components:{
         Selection,
@@ -117,7 +118,15 @@ export default {
                 
         }
     },
-    computed : {
+    created(){
+        api.getProvinceList().then( (res)=>{
+            console.log(res.data.data)
+            // this.provinceList = res.data.data;
+        } );
+
+        api.getCityList().then( (res)=>{
+            console.log(res)
+        } )
         
     },
     

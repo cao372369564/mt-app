@@ -81,17 +81,13 @@
         <el-row>
             <quality-life />
         </el-row>
-        <el-row>
-            <quality-life />
-        </el-row>
-        <el-row>
-            <quality-life />
-        </el-row>
+        
     </div>
 </template>
 
 <script>
 import QualityLife from '@/components/main/QualityLife.vue';
+import api from '@/api/index.js';
 export default {
     components:{
         QualityLife,
@@ -199,6 +195,11 @@ export default {
             curIndex: 0,
             timer : null
         }
+    },
+    created(){
+        api.getMenuList().then( (res)=>{
+            // console.log(res)
+        } )
     },
     methods:{
         enter(item,index){

@@ -1,7 +1,7 @@
 <template>
     <el-breadcrumb separator-class="el-icon-arrow-right" class='crumb'>
-        <el-breadcrumb-item :to="{ path: '/' }">郑州美团</el-breadcrumb-item>
-        <el-breadcrumb-item>郑州方特欢乐世界</el-breadcrumb-item>
+        <el-breadcrumb-item :to="{ path: '/' }">{{$store.state.position}}美团</el-breadcrumb-item>
+        <el-breadcrumb-item>{{$route.params.name}}</el-breadcrumb-item>
     </el-breadcrumb>
 </template>
 
